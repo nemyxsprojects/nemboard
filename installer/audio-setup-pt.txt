@@ -1,0 +1,7 @@
+Configuração de áudio
+
+O NemBoard mistura o microfone, os sons importados e o áudio do PC no VB-CABLE. No Discord, no seu jogo ou na aplicação de chamadas, selecione CABLE Output como microfone.
+
+Se o VB-CABLE não estiver instalado, o instalador inicia automaticamente o controlador oficial assinado. O Windows pede privilégios de administrador e pode ser necessário reiniciar.
+
+O NemBoard seleciona automaticamente o microfone físico, CABLE Input e o dispositivo de escuta predefinido.

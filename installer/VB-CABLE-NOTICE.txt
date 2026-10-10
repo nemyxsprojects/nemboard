@@ -1,0 +1,13 @@
+VB-CABLE — AVIS DE REDISTRIBUTION
+
+VB-CABLE est un pilote audio donationware créé par VB-Audio Software / Vincent Burel.
+Paquet officiel : VBCABLE_Driver_Pack45.zip (octobre 2024)
+Origine : https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip
+SHA-256 de l'archive intégrée : B950E39F01AF1D04EA623C8F6D8EB9B6EA5C477C637295FABF20631C85116BFB
+
+VB-Audio autorise l'intégration du paquet VB-CABLE avec une application lorsque son modèle donationware reste visible. VB-CABLE reste un produit distinct et conserve ses propres droits et conditions.
+
+Site et dons : https://vb-audio.com/Cable/
+Conditions de distribution : https://vb-audio.com/Services/licensing.htm
+
+Le setup NemBoard vérifie d'abord la présence d'un périphérique CABLE Input/Output. Si le pilote est absent et que la tâche correspondante est sélectionnée, il lance l'installateur x64 officiel signé avec élévation administrateur. Un redémarrage de Windows est nécessaire après l'installation du pilote.

@@ -1,0 +1,12 @@
+CONFIGURATION AUDIO
+
+NemBoard mélange votre microphone, les sons importés et l'audio du PC dans VB-CABLE.
+
+Si VB-CABLE n'est pas détecté, le setup lancera automatiquement son installateur officiel signé. Windows demandera une autorisation administrateur pour le pilote audio et un redémarrage sera nécessaire.
+
+1. Terminez l'installation et redémarrez Windows si le setup le demande.
+2. Lancez NemBoard : le microphone physique, CABLE Input et la sortie Windows par défaut sont sélectionnés automatiquement.
+3. Dans Discord, un jeu ou une application d'appel, sélectionnez CABLE Output comme microphone.
+
+VB-CABLE est un donationware créé par VB-Audio Software et distribué avec son autorisation. Si vous le trouvez utile, vous pouvez soutenir son auteur sur https://vb-audio.com/Cable/.
+Le navigateur intégré conserve localement sa session et ses préférences dans le profil NemBoard.

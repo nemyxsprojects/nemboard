@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soundboard.Core", "Soundboard.Core\Soundboard.Core.csproj", "{84ADE86E-54C1-49DB-A008-0DB6BC42FE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soundboard.Core.Tests", "Soundboard.Core.Tests\Soundboard.Core.Tests.csproj", "{29FE93A1-0A82-473A-9827-5697D99203F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soundboard.App", "Soundboard.App\Soundboard.App.csproj", "{E43641E2-DA51-4141-8716-9F163A3EF1E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84ADE86E-54C1-49DB-A008-0DB6BC42FE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84ADE86E-54C1-49DB-A008-0DB6BC42FE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84ADE86E-54C1-49DB-A008-0DB6BC42FE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84ADE86E-54C1-49DB-A008-0DB6BC42FE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FE93A1-0A82-473A-9827-5697D99203F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FE93A1-0A82-473A-9827-5697D99203F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FE93A1-0A82-473A-9827-5697D99203F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FE93A1-0A82-473A-9827-5697D99203F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43641E2-DA51-4141-8716-9F163A3EF1E6}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{E43641E2-DA51-4141-8716-9F163A3EF1E6}.Debug|Any CPU.Build.0 = Debug|x64
+		{E43641E2-DA51-4141-8716-9F163A3EF1E6}.Release|Any CPU.ActiveCfg = Release|x64
+		{E43641E2-DA51-4141-8716-9F163A3EF1E6}.Release|Any CPU.Build.0 = Release|x64
+	EndGlobalSection
+EndGlobal

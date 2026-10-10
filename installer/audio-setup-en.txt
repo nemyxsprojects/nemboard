@@ -1,0 +1,11 @@
+Audio routing setup
+
+NemBoard mixes your microphone, imported sounds, and PC audio into VB-CABLE. In Discord, a game, or your calling app, select CABLE Output as your microphone.
+
+The installer checks whether VB-CABLE is already available. If it is missing and the default option remains selected, Windows will display a UAC prompt to install the official VB-Audio driver. A restart may be required.
+
+VB-CABLE is donationware from VB-Audio. Its official page and distribution terms remain available at:
+https://vb-audio.com/Cable/
+https://vb-audio.com/Services/licensing.htm
+
+After installation, NemBoard automatically selects the physical Windows microphone, CABLE Input, and the default listening device. These choices remain available from the audio button.

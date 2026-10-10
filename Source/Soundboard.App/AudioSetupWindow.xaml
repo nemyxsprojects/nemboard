@@ -1,0 +1,45 @@
+<Window x:Class="Soundboard.App.AudioSetupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Audio setup — NemBoard" Width="520" Height="610"
+        ResizeMode="NoResize" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Icon="Assets/NemBoard.ico">
+  <Grid Margin="24,20">
+    <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+
+    <StackPanel>
+      <TextBlock x:Name="HeadingText" Text="Audio setup" FontSize="22" FontWeight="SemiBold" />
+      <TextBlock x:Name="IntroText" Text="Choose these three devices once. You can change them later from the audio button." Foreground="{StaticResource SecondaryText}" FontSize="13" TextWrapping="Wrap" Margin="0,7,0,0" />
+    </StackPanel>
+
+    <StackPanel Grid.Row="1" Margin="0,20,0,0">
+      <TextBlock x:Name="MicrophoneStepText" Text="1  MICROPHONE" FontSize="11" FontWeight="Bold" Foreground="#AFAFAF" />
+      <TextBlock x:Name="VoiceText" Text="Your voice" FontSize="15" FontWeight="SemiBold" Margin="0,5,0,6" />
+      <ComboBox x:Name="MicrophoneCombo" DisplayMemberPath="Name" SelectionChanged="SelectionChanged" />
+      <TextBlock x:Name="MicrophoneHelpText" Text="NemBoard sends this microphone to the virtual cable while routing is active." Foreground="{StaticResource SecondaryText}" FontSize="12" TextWrapping="Wrap" Margin="0,6,0,0" />
+
+      <Border Height="1" Background="{StaticResource LineBrush}" Margin="0,17" />
+      <TextBlock x:Name="CallsStepText" Text="2  TO CALLS" FontSize="11" FontWeight="Bold" Foreground="#AFAFAF" />
+      <TextBlock Text="CABLE Input" FontSize="15" FontWeight="SemiBold" Margin="0,5,0,6" />
+      <ComboBox x:Name="CableCombo" DisplayMemberPath="Name" SelectionChanged="SelectionChanged" />
+      <TextBlock x:Name="CableHelpText" Text="In Discord or your game, select CABLE Output as the microphone. It is the other end of the same cable." Foreground="{StaticResource SecondaryText}" FontSize="12" TextWrapping="Wrap" Margin="0,6,0,0" />
+      <Border x:Name="CableWarning" BorderBrush="#676767" BorderThickness="1" CornerRadius="4" Padding="10" Margin="0,9,0,0" Visibility="Collapsed">
+        <DockPanel>
+          <Button x:Name="DownloadCableButton" DockPanel.Dock="Right" Style="{StaticResource FlatButton}" Content="Download" Click="OpenCableWebsite_Click" Margin="10,0,0,0" />
+          <TextBlock x:Name="CableWarningText" Text="VB-CABLE was not detected. Install it, restart Windows if requested, then reopen this window." Foreground="#E5E5E5" FontSize="12" TextWrapping="Wrap" VerticalAlignment="Center" />
+        </DockPanel>
+      </Border>
+
+      <Border Height="1" Background="{StaticResource LineBrush}" Margin="0,17" />
+      <TextBlock x:Name="MonitorStepText" Text="3  MONITOR" FontSize="11" FontWeight="Bold" Foreground="#AFAFAF" />
+      <TextBlock x:Name="HeadphonesText" Text="Your headphones" FontSize="15" FontWeight="SemiBold" Margin="0,5,0,6" />
+      <ComboBox x:Name="MonitorCombo" DisplayMemberPath="Name" SelectionChanged="SelectionChanged" />
+      <Button x:Name="TestButton" Style="{StaticResource FlatButton}" Content="Play test sound" HorizontalAlignment="Left" Margin="0,9,0,0" Click="TestButton_Click" />
+      <TextBlock x:Name="TestResult" Foreground="{StaticResource SecondaryText}" FontSize="12" Margin="0,7,0,0" />
+    </StackPanel>
+
+    <DockPanel Grid.Row="2" Margin="0,20,0,0">
+      <Button x:Name="CancelButton" Style="{StaticResource FlatButton}" Content="Cancel" IsCancel="True" DockPanel.Dock="Left" />
+      <Button x:Name="SaveButton" Style="{StaticResource PrimaryButton}" Content="Save and activate" IsDefault="True" DockPanel.Dock="Right" Click="SaveButton_Click" />
+    </DockPanel>
+  </Grid>
+</Window>

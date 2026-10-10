@@ -1,0 +1,19 @@
+# .NET and Visual Studio
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+TestResults/
+
+# Local build output and dependency caches
+artifacts/
+dist/
+.dotnet-cli/
+.nuget/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
